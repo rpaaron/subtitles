@@ -1,0 +1,911 @@
+{
+    "__type__": "Deck",
+    "children": [],
+    "crowdanki_uuid": "dd8b82be-c580-11ea-a10d-b9c9be409072",
+    "deck_config_uuid": "dd8b82bf-c580-11ea-a10d-b9c9be409072",
+    "deck_configurations": [
+        {
+            "__type__": "DeckConfig",
+            "autoplay": true,
+            "crowdanki_uuid": "dd8b82bf-c580-11ea-a10d-b9c9be409072",
+            "dyn": false,
+            "lapse": {
+                "delays": [
+                    10.0
+                ],
+                "leechAction": 0,
+                "leechFails": 8,
+                "minInt": 1,
+                "mult": 0.0
+            },
+            "maxTaken": 60,
+            "name": "Default",
+            "new": {
+                "bury": false,
+                "delays": [
+                    1.0,
+                    10.0
+                ],
+                "initialFactor": 2500,
+                "ints": [
+                    1,
+                    4,
+                    7
+                ],
+                "order": 1,
+                "perDay": 20,
+                "separate": true
+            },
+            "replayq": true,
+            "rev": {
+                "bury": false,
+                "ease4": 1.3,
+                "fuzz": 0.05,
+                "hardFactor": 1.2,
+                "ivlFct": 1.0,
+                "maxIvl": 36500,
+                "minSpace": 1,
+                "perDay": 200
+            },
+            "timer": 0
+        }
+    ],
+    "desc": "",
+    "dyn": 0,
+    "extendNew": 10,
+    "extendRev": 50,
+    "media_files": [],
+    "name": "CH Zero To Hero - Why hot water",
+    "note_models": [
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "dd8b82c2-c580-11ea-a10d-b9c9be409072",
+            "css": "\n                        .card {\n                          font-family: futura-pt,sans-serif,sans-serif;\n                          font-size: 20px;\n                          text-align: center;\n                          color: black;\n                          background-color: #e9e9e9;\n                        }\n                        \n                        span {\n                          font-size: 0.9rem;\n                          color: #3c3c3c;\n                        }\n                      ",
+            "flds": [
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "time",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "nextTime",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "text",
+                    "ord": 2,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "prevText",
+                    "ord": 3,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "nextText",
+                    "ord": 4,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "id",
+                    "ord": 5,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "startSeconds",
+                    "ord": 6,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "endSeconds",
+                    "ord": 7,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "title",
+                    "ord": 8,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "Youtube2Anki",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tags": [],
+            "tmpls": [
+                {
+                    "afmt": "\n                                {{FrontSide}}\n                                <hr id=answer>\n                              ",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Card 1",
+                    "ord": 0,
+                    "qfmt": "\n                                {{title}}\n                                <br>\n                                \n                                <span>{{prevText}}</span>\n                                <br>\n                                \n                                {{text}}\n                                <br>\n                                \n                                <iframe\n                                    width=\"560\"\n                                    height=\"315\"\n                                    src=\"https://www.youtube.com/embed/{{id}}?start={{startSeconds}}&end={{endSeconds}}&autoplay=1\"\n                                    frameborder=0\n                                      autoplay=1\n                                />\n                                \n                                <br>\n                                <span>{{time}} - {{nextTime}}</span>\n                                <br>\n                                <span>{{nextText}}</span>\n                              "
+                }
+            ],
+            "type": 0,
+            "vers": []
+        }
+    ],
+    "notes": [
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "00:02",
+                "00:03",
+                "今天的话题是",
+                "",
+                "为什么中国人喜欢喝热水",
+                "zQDKXbZqIrU",
+                "2",
+                "4",
+                "【说中文，长知识】为什么中国人喜欢喝热水？Why Do Chinese People Drink Hot Water?"
+            ],
+            "flags": 0,
+            "guid": "wkmv5)HTOY",
+            "note_model_uuid": "dd8b82c2-c580-11ea-a10d-b9c9be409072",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "00:03",
+                "00:07",
+                "为什么中国人喜欢喝热水",
+                "今天的话题是",
+                "大家知道这个是什么吗？",
+                "zQDKXbZqIrU",
+                "3",
+                "8",
+                "【说中文，长知识】为什么中国人喜欢喝热水？Why Do Chinese People Drink Hot Water?"
+            ],
+            "flags": 0,
+            "guid": "McNt:`_k4p",
+            "note_model_uuid": "dd8b82c2-c580-11ea-a10d-b9c9be409072",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "00:08",
+                "00:11",
+                "这个就是保温杯",
+                "大家知道这个是什么吗？",
+                "保持温度的杯子",
+                "zQDKXbZqIrU",
+                "8",
+                "12",
+                "【说中文，长知识】为什么中国人喜欢喝热水？Why Do Chinese People Drink Hot Water?"
+            ],
+            "flags": 0,
+            "guid": "~1f0[9?q*",
+            "note_model_uuid": "dd8b82c2-c580-11ea-a10d-b9c9be409072",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "00:11",
+                "00:14",
+                "保持温度的杯子",
+                "这个就是保温杯",
+                "如果你有中国朋友，或者你去过中国",
+                "zQDKXbZqIrU",
+                "11",
+                "15",
+                "【说中文，长知识】为什么中国人喜欢喝热水？Why Do Chinese People Drink Hot Water?"
+            ],
+            "flags": 0,
+            "guid": "Ezl=}St_*z",
+            "note_model_uuid": "dd8b82c2-c580-11ea-a10d-b9c9be409072",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "00:14",
+                "00:17",
+                "如果你有中国朋友，或者你去过中国",
+                "保持温度的杯子",
+                "肯定发现这个非常普遍",
+                "zQDKXbZqIrU",
+                "14",
+                "18",
+                "【说中文，长知识】为什么中国人喜欢喝热水？Why Do Chinese People Drink Hot Water?"
+            ],
+            "flags": 0,
+            "guid": "FBgp2G}_J+",
+            "note_model_uuid": "dd8b82c2-c580-11ea-a10d-b9c9be409072",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "00:25",
+                "00:29",
+                "现在越来越多人也喜欢喝咖啡",
+                "众所周知，中国人热爱喝茶",
+                "但是喝热水这个习惯",
+                "zQDKXbZqIrU",
+                "25",
+                "30",
+                "【说中文，长知识】为什么中国人喜欢喝热水？Why Do Chinese People Drink Hot Water?"
+            ],
+            "flags": 0,
+            "guid": "hhbl_*])k)",
+            "note_model_uuid": "dd8b82c2-c580-11ea-a10d-b9c9be409072",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "00:29",
+                "00:31",
+                "但是喝热水这个习惯",
+                "现在越来越多人也喜欢喝咖啡",
+                "依然是中国的一个特色",
+                "zQDKXbZqIrU",
+                "29",
+                "32",
+                "【说中文，长知识】为什么中国人喜欢喝热水？Why Do Chinese People Drink Hot Water?"
+            ],
+            "flags": 0,
+            "guid": "Q/j5VY?]qF",
+            "note_model_uuid": "dd8b82c2-c580-11ea-a10d-b9c9be409072",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "00:36",
+                "00:39",
+                "特别是爸爸妈妈、爷爷奶奶",
+                "在中国家庭中",
+                "都有喝热水的习惯",
+                "zQDKXbZqIrU",
+                "36",
+                "40",
+                "【说中文，长知识】为什么中国人喜欢喝热水？Why Do Chinese People Drink Hot Water?"
+            ],
+            "flags": 0,
+            "guid": "sYl9VRGJZB",
+            "note_model_uuid": "dd8b82c2-c580-11ea-a10d-b9c9be409072",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "00:42",
+                "00:44",
+                "这是为什么呢？",
+                "都有喝热水的习惯",
+                "首先我们要知道什么是生水什么是开水",
+                "zQDKXbZqIrU",
+                "42",
+                "45",
+                "【说中文，长知识】为什么中国人喜欢喝热水？Why Do Chinese People Drink Hot Water?"
+            ],
+            "flags": 0,
+            "guid": "e|Nr,6RSy(",
+            "note_model_uuid": "dd8b82c2-c580-11ea-a10d-b9c9be409072",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "00:48",
+                "00:54",
+                "生水就是没有烧开的水",
+                "首先我们要知道什么是生水什么是开水",
+                "开水就是烧开了的水",
+                "zQDKXbZqIrU",
+                "48",
+                "55",
+                "【说中文，长知识】为什么中国人喜欢喝热水？Why Do Chinese People Drink Hot Water?"
+            ],
+            "flags": 0,
+            "guid": "nz6YY&kP2W",
+            "note_model_uuid": "dd8b82c2-c580-11ea-a10d-b9c9be409072",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "00:54",
+                "00:58",
+                "开水就是烧开了的水",
+                "生水就是没有烧开的水",
+                "中国人喝的热水是降温了的开水",
+                "zQDKXbZqIrU",
+                "54",
+                "59",
+                "【说中文，长知识】为什么中国人喜欢喝热水？Why Do Chinese People Drink Hot Water?"
+            ],
+            "flags": 0,
+            "guid": "CwoyryRh{r",
+            "note_model_uuid": "dd8b82c2-c580-11ea-a10d-b9c9be409072",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "00:58",
+                "01:01",
+                "中国人喝的热水是降温了的开水",
+                "开水就是烧开了的水",
+                "温度和体温差不多",
+                "zQDKXbZqIrU",
+                "58",
+                "62",
+                "【说中文，长知识】为什么中国人喜欢喝热水？Why Do Chinese People Drink Hot Water?"
+            ],
+            "flags": 0,
+            "guid": "bXz+I*|6Q?",
+            "note_model_uuid": "dd8b82c2-c580-11ea-a10d-b9c9be409072",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "01:05",
+                "01:09",
+                "其实喝热水在中国的确有着悠久的历史",
+                "温度和体温差不多",
+                "中国的饮茶历史",
+                "zQDKXbZqIrU",
+                "65",
+                "70",
+                "【说中文，长知识】为什么中国人喜欢喝热水？Why Do Chinese People Drink Hot Water?"
+            ],
+            "flags": 0,
+            "guid": "FAH|Tq_kg{",
+            "note_model_uuid": "dd8b82c2-c580-11ea-a10d-b9c9be409072",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "01:09",
+                "01:11",
+                "中国的饮茶历史",
+                "其实喝热水在中国的确有着悠久的历史",
+                "可以追溯到四千七百多年前",
+                "zQDKXbZqIrU",
+                "69",
+                "72",
+                "【说中文，长知识】为什么中国人喜欢喝热水？Why Do Chinese People Drink Hot Water?"
+            ],
+            "flags": 0,
+            "guid": "FdMEUa:Ym$",
+            "note_model_uuid": "dd8b82c2-c580-11ea-a10d-b9c9be409072",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "01:11",
+                "01:15",
+                "可以追溯到四千七百多年前",
+                "中国的饮茶历史",
+                "而这种饮茶文化在某种程度上",
+                "zQDKXbZqIrU",
+                "71",
+                "76",
+                "【说中文，长知识】为什么中国人喜欢喝热水？Why Do Chinese People Drink Hot Water?"
+            ],
+            "flags": 0,
+            "guid": "E|-NpUO~:X",
+            "note_model_uuid": "dd8b82c2-c580-11ea-a10d-b9c9be409072",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "01:29",
+                "01:35",
+                "喝热水不但能养生保健还能缓解病情",
+                "中医就发现",
+                "但喝热水仅仅是古代中国上层社会的习惯",
+                "zQDKXbZqIrU",
+                "89",
+                "96",
+                "【说中文，长知识】为什么中国人喜欢喝热水？Why Do Chinese People Drink Hot Water?"
+            ],
+            "flags": 0,
+            "guid": "KN4j.<H_!Z",
+            "note_model_uuid": "dd8b82c2-c580-11ea-a10d-b9c9be409072",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "01:35",
+                "01:42",
+                "但喝热水仅仅是古代中国上层社会的习惯",
+                "喝热水不但能养生保健还能缓解病情",
+                "只有所谓的“大户人家”",
+                "zQDKXbZqIrU",
+                "95",
+                "103",
+                "【说中文，长知识】为什么中国人喜欢喝热水？Why Do Chinese People Drink Hot Water?"
+            ],
+            "flags": 0,
+            "guid": "oGK0^D&g-b",
+            "note_model_uuid": "dd8b82c2-c580-11ea-a10d-b9c9be409072",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "01:42",
+                "01:44",
+                "只有所谓的“大户人家”",
+                "但喝热水仅仅是古代中国上层社会的习惯",
+                "才能烧热水泡茶喝",
+                "zQDKXbZqIrU",
+                "102",
+                "105",
+                "【说中文，长知识】为什么中国人喜欢喝热水？Why Do Chinese People Drink Hot Water?"
+            ],
+            "flags": 0,
+            "guid": "p]9-#J>P#S",
+            "note_model_uuid": "dd8b82c2-c580-11ea-a10d-b9c9be409072",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "01:44",
+                "01:47",
+                "才能烧热水泡茶喝",
+                "只有所谓的“大户人家”",
+                "而对于古代底层人民",
+                "zQDKXbZqIrU",
+                "104",
+                "108",
+                "【说中文，长知识】为什么中国人喜欢喝热水？Why Do Chinese People Drink Hot Water?"
+            ],
+            "flags": 0,
+            "guid": "B1*8]Y20U2",
+            "note_model_uuid": "dd8b82c2-c580-11ea-a10d-b9c9be409072",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "01:51",
+                "01:54",
+                "因为经济的原因",
+                "而对于古代底层人民",
+                "再加上没有足够的燃料",
+                "zQDKXbZqIrU",
+                "111",
+                "115",
+                "【说中文，长知识】为什么中国人喜欢喝热水？Why Do Chinese People Drink Hot Water?"
+            ],
+            "flags": 0,
+            "guid": "IL&HgQmy.2",
+            "note_model_uuid": "dd8b82c2-c580-11ea-a10d-b9c9be409072",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "01:54",
+                "01:56",
+                "再加上没有足够的燃料",
+                "因为经济的原因",
+                "他们一般也都喝生水",
+                "zQDKXbZqIrU",
+                "114",
+                "117",
+                "【说中文，长知识】为什么中国人喜欢喝热水？Why Do Chinese People Drink Hot Water?"
+            ],
+            "flags": 0,
+            "guid": "DO|5B{=_AQ",
+            "note_model_uuid": "dd8b82c2-c580-11ea-a10d-b9c9be409072",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "01:56",
+                "01:58",
+                "他们一般也都喝生水",
+                "再加上没有足够的燃料",
+                "到了民国时期",
+                "zQDKXbZqIrU",
+                "116",
+                "119",
+                "【说中文，长知识】为什么中国人喜欢喝热水？Why Do Chinese People Drink Hot Water?"
+            ],
+            "flags": 0,
+            "guid": "LQg^A~|bJ_",
+            "note_model_uuid": "dd8b82c2-c580-11ea-a10d-b9c9be409072",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "01:58",
+                "02:00",
+                "到了民国时期",
+                "他们一般也都喝生水",
+                "也就是1911-1949年",
+                "zQDKXbZqIrU",
+                "118",
+                "121",
+                "【说中文，长知识】为什么中国人喜欢喝热水？Why Do Chinese People Drink Hot Water?"
+            ],
+            "flags": 0,
+            "guid": "u5]n%=-Bn2",
+            "note_model_uuid": "dd8b82c2-c580-11ea-a10d-b9c9be409072",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "02:04",
+                "02:07",
+                "中国的社会文化逐渐受到",
+                "也就是1911-1949年",
+                "西方国家和日本的影响",
+                "zQDKXbZqIrU",
+                "124",
+                "128",
+                "【说中文，长知识】为什么中国人喜欢喝热水？Why Do Chinese People Drink Hot Water?"
+            ],
+            "flags": 0,
+            "guid": "xb,nFK:TY-",
+            "note_model_uuid": "dd8b82c2-c580-11ea-a10d-b9c9be409072",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "02:10",
+                "02:12",
+                "细菌学说传入",
+                "西方国家和日本的影响",
+                "烧开水是最有效的灭菌方式",
+                "zQDKXbZqIrU",
+                "130",
+                "133",
+                "【说中文，长知识】为什么中国人喜欢喝热水？Why Do Chinese People Drink Hot Water?"
+            ],
+            "flags": 0,
+            "guid": "rE%hEmH!a.",
+            "note_model_uuid": "dd8b82c2-c580-11ea-a10d-b9c9be409072",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "02:12",
+                "02:16",
+                "烧开水是最有效的灭菌方式",
+                "细菌学说传入",
+                "因此“喝热水”也获得了科学支持",
+                "zQDKXbZqIrU",
+                "132",
+                "137",
+                "【说中文，长知识】为什么中国人喜欢喝热水？Why Do Chinese People Drink Hot Water?"
+            ],
+            "flags": 0,
+            "guid": "fuh9C^9i#y",
+            "note_model_uuid": "dd8b82c2-c580-11ea-a10d-b9c9be409072",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "02:21",
+                "02:25",
+                "新中国在1949成立后",
+                "因此“喝热水”也获得了科学支持",
+                "中国政府考虑到健康问题",
+                "zQDKXbZqIrU",
+                "141",
+                "146",
+                "【说中文，长知识】为什么中国人喜欢喝热水？Why Do Chinese People Drink Hot Water?"
+            ],
+            "flags": 0,
+            "guid": "u9D!][f`0I",
+            "note_model_uuid": "dd8b82c2-c580-11ea-a10d-b9c9be409072",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "02:28",
+                "02:31",
+                "因而号召全民饮用热水",
+                "中国政府考虑到健康问题",
+                "并且为没有条件烧开水的居民区",
+                "zQDKXbZqIrU",
+                "148",
+                "152",
+                "【说中文，长知识】为什么中国人喜欢喝热水？Why Do Chinese People Drink Hot Water?"
+            ],
+            "flags": 0,
+            "guid": "qkC|u8R0U[",
+            "note_model_uuid": "dd8b82c2-c580-11ea-a10d-b9c9be409072",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "02:31",
+                "02:35",
+                "并且为没有条件烧开水的居民区",
+                "因而号召全民饮用热水",
+                "建设了很多锅炉房、开水房",
+                "zQDKXbZqIrU",
+                "151",
+                "156",
+                "【说中文，长知识】为什么中国人喜欢喝热水？Why Do Chinese People Drink Hot Water?"
+            ],
+            "flags": 0,
+            "guid": "Mx,^F#ds0-",
+            "note_model_uuid": "dd8b82c2-c580-11ea-a10d-b9c9be409072",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "02:35",
+                "02:39",
+                "建设了很多锅炉房、开水房",
+                "并且为没有条件烧开水的居民区",
+                "官方全面加强了“喝热水”",
+                "zQDKXbZqIrU",
+                "155",
+                "160",
+                "【说中文，长知识】为什么中国人喜欢喝热水？Why Do Chinese People Drink Hot Water?"
+            ],
+            "flags": 0,
+            "guid": "lS({G7hHS&",
+            "note_model_uuid": "dd8b82c2-c580-11ea-a10d-b9c9be409072",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "02:39",
+                "02:42",
+                "官方全面加强了“喝热水”",
+                "建设了很多锅炉房、开水房",
+                "“不喝生水”的宣传和推广",
+                "zQDKXbZqIrU",
+                "159",
+                "163",
+                "【说中文，长知识】为什么中国人喜欢喝热水？Why Do Chinese People Drink Hot Water?"
+            ],
+            "flags": 0,
+            "guid": "uhF[_,fuR=",
+            "note_model_uuid": "dd8b82c2-c580-11ea-a10d-b9c9be409072",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "02:51",
+                "02:56",
+                "也因此深入中国广大百姓的脑海",
+                "喝热水防拉肚子、防传染病的观念",
+                "在那个年代，用来存取热水的保温瓶",
+                "zQDKXbZqIrU",
+                "171",
+                "177",
+                "【说中文，长知识】为什么中国人喜欢喝热水？Why Do Chinese People Drink Hot Water?"
+            ],
+            "flags": 0,
+            "guid": "b$dd^nXh]f",
+            "note_model_uuid": "dd8b82c2-c580-11ea-a10d-b9c9be409072",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "02:59",
+                "03:03",
+                "成为了一个非常普遍的结婚礼物",
+                "在那个年代，用来存取热水的保温瓶",
+                "到了90年代，随着科学技术的发展",
+                "zQDKXbZqIrU",
+                "179",
+                "184",
+                "【说中文，长知识】为什么中国人喜欢喝热水？Why Do Chinese People Drink Hot Water?"
+            ],
+            "flags": 0,
+            "guid": "Fx#BQ+j5fI",
+            "note_model_uuid": "dd8b82c2-c580-11ea-a10d-b9c9be409072",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "03:03",
+                "03:07",
+                "到了90年代，随着科学技术的发展",
+                "成为了一个非常普遍的结婚礼物",
+                "保温瓶、保温杯、烧水壶的普及化",
+                "zQDKXbZqIrU",
+                "183",
+                "188",
+                "【说中文，长知识】为什么中国人喜欢喝热水？Why Do Chinese People Drink Hot Water?"
+            ],
+            "flags": 0,
+            "guid": "h&1)-g)B^o",
+            "note_model_uuid": "dd8b82c2-c580-11ea-a10d-b9c9be409072",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "03:16",
+                "03:20",
+                "多数中国人可以随心所欲喝上热水",
+                "所以无论是城乡还是贫富",
+                "这就是为什么直到今天",
+                "zQDKXbZqIrU",
+                "196",
+                "201",
+                "【说中文，长知识】为什么中国人喜欢喝热水？Why Do Chinese People Drink Hot Water?"
+            ],
+            "flags": 0,
+            "guid": "j2,QcqN<6K",
+            "note_model_uuid": "dd8b82c2-c580-11ea-a10d-b9c9be409072",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "03:22",
+                "03:26",
+                "中国人还是有喝热水的习惯",
+                "这就是为什么直到今天",
+                "如果你喜欢这种视频，别忘了点赞",
+                "zQDKXbZqIrU",
+                "202",
+                "207",
+                "【说中文，长知识】为什么中国人喜欢喝热水？Why Do Chinese People Drink Hot Water?"
+            ],
+            "flags": 0,
+            "guid": "nqt$=dVwJ!",
+            "note_model_uuid": "dd8b82c2-c580-11ea-a10d-b9c9be409072",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "03:32",
+                "03:35",
+                "以后我们会做更多类似这样的视频",
+                "分享给你的朋友，还有关注我们的频道",
+                "也可以看看我们提供的HSK网课",
+                "zQDKXbZqIrU",
+                "212",
+                "216",
+                "【说中文，长知识】为什么中国人喜欢喝热水？Why Do Chinese People Drink Hot Water?"
+            ],
+            "flags": 0,
+            "guid": "!{M-Xi/4J",
+            "note_model_uuid": "dd8b82c2-c580-11ea-a10d-b9c9be409072",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "03:46",
+                "03:46",
+                "我们下次见，拜拜",
+                "今天的视频就到这里",
+                "",
+                "zQDKXbZqIrU",
+                "226",
+                "",
+                "【说中文，长知识】为什么中国人喜欢喝热水？Why Do Chinese People Drink Hot Water?"
+            ],
+            "flags": 0,
+            "guid": "HQjyCf1s7u",
+            "note_model_uuid": "dd8b82c2-c580-11ea-a10d-b9c9be409072",
+            "tags": []
+        }
+    ]
+}
